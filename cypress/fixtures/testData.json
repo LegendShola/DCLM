@@ -1,0 +1,9 @@
+{  
+    "address": {
+        "wrong": "8 Idowu Taylor street, Victoria Island",
+        "correct": "8 Idowu Taylor street",
+        "nonAphanumeric": "Enter AlphaNumeric Characters Only",
+        "emptyAddress": "Should NOT Be Shorter Than 5 Characters"
+    }
+
+}    
