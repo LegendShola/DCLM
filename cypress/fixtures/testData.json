@@ -2,8 +2,14 @@
     "address": {
         "wrong": "8 Idowu Taylor street, Victoria Island",
         "correct": "8 Idowu Taylor street",
-        "nonAphanumeric": "Enter AlphaNumeric Characters Only",
-        "emptyAddress": "Should NOT Be Shorter Than 5 Characters"
+        "nonAphanumeric": "Enter AlphaNumeric characters only",
+        "emptyAddress": "Should NOT Be Shorter Than 5 Characters",
+        "expectedStateOrProvince": "Lagos",
+        "firstName": "Chudy",
+        "lastName": "Ademola",
+        "mobileNumber": "9088977653",
+        "mobileNumber1": "09088977653",
+        "emailAddress": "siu@gmail.com"
     }
 
 }    

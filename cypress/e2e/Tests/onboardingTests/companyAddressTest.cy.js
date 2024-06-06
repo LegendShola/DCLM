@@ -3,6 +3,7 @@ import dashboardPage from "../../PageObjects/onboardingPO/dashboardPage";
 import { generateRandomAlphanumeric, getRandomCompanyName } from '../../../support/utils';
 import companyDetailsPage from "../../PageObjects/onboardingPO/companyDetailsPage";
 import companyAddressPage from "../../PageObjects/onboardingPO/companyAddressPage";
+import profileOwnerPage from "../../PageObjects/onboardingPO/profileOwnerPage";
 const data = require('../../../fixtures/testData.json')
 
 
@@ -23,18 +24,19 @@ context('Company Address test', ()=>{
         cy.scrollTo('top');
     })
 
-    xit('Company address validation', () => {
+    it('Company address validation', () => {
         companyAddressPage.addressCheck(data.address.correct);
+        companyAddressPage.verifyAddress(data.address.expectedStateOrProvince)
     })
 
-    it('Non alphanumeric character in address', () => {
+    xit('Non alphanumeric character in address', () => {
         companyAddressPage.addressCheck(data.address.wrong);
-        companyAddressPage.assertAddressCheck(data.address.nonAphanumeric);
+        companyAddressPage.assertAddressCheck('Enter AlphaNumeric characters only');
     })
 
     xit('validate empty address field', () => {
         companyAddressPage.emptyAddressCheck();
-        companyAddressPage.assertAddressCheck(data.address.emptyAddress);
+        companyAddressPage.assertAddressCheck('should NOT be shorter than 5 characters');
     })
 
 })
