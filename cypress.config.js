@@ -12,7 +12,6 @@ module.exports = defineConfig({
     // },
 
     baseUrl: 'https://bss-uat.mtn.com.ng/dclm-web-ui/dashboard',
-    experimentalSessionAndOrigin: true,
     testIsolation: true,
     "viewportWidth": 1280,
     "viewportHeight": 720,
